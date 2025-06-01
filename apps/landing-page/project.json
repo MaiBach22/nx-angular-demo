@@ -19,6 +19,11 @@
           {
             "glob": "**/*",
             "input": "apps/cube-dance-party/public"
+          },
+          {
+            "input": "apps/cube-dance-party/src/assets",
+            "glob": "**/*",
+            "output": "assets"
           }
         ],
         "styles": ["apps/cube-dance-party/src/styles.css"],
