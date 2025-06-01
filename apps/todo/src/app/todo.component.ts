@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NgForOf } from '@angular/common';
+import { HeaderComponent } from '@nx-angular/header';
 
 interface Task {
   text: string;
@@ -8,7 +9,7 @@ interface Task {
 }
 
 @Component({
-  imports: [FormsModule, NgForOf],
+  imports: [FormsModule, NgForOf, HeaderComponent],
   selector: 'todo-root',
   templateUrl: './todo.component.html',
   styleUrl: './todo.component.css',
