@@ -1,32 +1,32 @@
 {
-  "name": "cube-dance-party",
+  "name": "landing-page",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/cube-dance-party/src",
+  "sourceRoot": "apps/landing-page/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/cube-dance-party",
-        "index": "apps/cube-dance-party/src/index.html",
-        "main": "apps/cube-dance-party/src/main.ts",
+        "outputPath": "dist/apps/landing-page",
+        "index": "apps/landing-page/src/index.html",
+        "main": "apps/landing-page/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/cube-dance-party/tsconfig.app.json",
+        "tsConfig": "apps/landing-page/tsconfig.app.json",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/cube-dance-party/public"
+            "input": "apps/landing-page/public"
           },
           {
-            "input": "apps/cube-dance-party/src/assets",
+            "input": "apps/landing-page/src/assets",
             "glob": "**/*",
             "output": "assets"
           }
         ],
-        "styles": ["apps/cube-dance-party/src/styles.css"],
+        "styles": ["apps/landing-page/src/styles.css"],
         "scripts": []
       },
       "configurations": {
@@ -61,10 +61,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "cube-dance-party:build:production"
+          "buildTarget": "landing-page:build:production"
         },
         "development": {
-          "buildTarget": "cube-dance-party:build:development"
+          "buildTarget": "landing-page:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "cube-dance-party:build"
+        "buildTarget": "landing-page:build"
       }
     },
     "lint": {
@@ -82,14 +82,14 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/cube-dance-party/jest.config.ts"
+        "jestConfig": "apps/landing-page/jest.config.ts"
       }
     },
     "serve-static": {
       "continuous": true,
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "cube-dance-party:build",
+        "buildTarget": "landing-page:build",
         "port": 4200,
         "spa": true
       }

@@ -1,8 +1,8 @@
 export default {
-  displayName: 'cube-dance-party',
+  displayName: 'landing-page',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/cube-dance-party',
+  coverageDirectory: '../../coverage/apps/landing-page',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

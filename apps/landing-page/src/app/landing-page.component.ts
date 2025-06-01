@@ -3,11 +3,11 @@ import { HeaderComponent } from '@nx-angular/header';
 
 @Component({
   selector: 'landing-page-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  templateUrl: './landing-page.component.html',
+  styleUrls: ['./landing-page.component.css'],
   imports: [HeaderComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppComponent {
+export class LandingPageComponent {
 
 }

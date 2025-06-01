@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
 import { FormsModule } from '@angular/forms';
 import { NgForOf } from '@angular/common';
 
@@ -12,10 +10,10 @@ interface Task {
 @Component({
   imports: [FormsModule, NgForOf],
   selector: 'todo-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  templateUrl: './todo.component.html',
+  styleUrl: './todo.component.css',
 })
-export class AppComponent {
+export class TodoComponent {
   tasks: Task[] = [];
   newTask = '';
 
@@ -30,7 +28,6 @@ export class AppComponent {
   toggleTask(task: Task) {
     task.completed = !task.completed;
   }
-
 
   deleteTask(index: number) {
     this.tasks.splice(index, 1);

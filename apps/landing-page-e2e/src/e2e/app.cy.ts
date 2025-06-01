@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('cube-dance-party-e2e', () => {
+describe('landing-page-e2e', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {

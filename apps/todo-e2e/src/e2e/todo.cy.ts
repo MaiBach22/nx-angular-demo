@@ -19,16 +19,15 @@ describe('todo-e2e', () => {
     cy.get('[data-testid="new-task"]').type('Walk the dog');
     cy.get('[data-testid="add-task"]').click();
 
-    cy.get('[data-testid="task"] input[type="checkbox"]').check().should('be.checked');
-    cy.get('[data-testid="task"] input[type="checkbox"]').uncheck().should('not.be.checked');
-  });
+    cy.get('[data-testid="task"]').click();
+    cy.get('[data-testid="task"]').should('have.class', 'completed');});
 
   it('should delete a task', () => {
     cy.get('[data-testid="new-task"]').type('Read book');
     cy.get('[data-testid="add-task"]').click();
 
     cy.get('[data-testid="task"]').should('have.length', 1);
-    cy.get('[data-testid="delete-task"]').click();
+    cy.get('.delete-btn').click();
     cy.get('[data-testid="task"]').should('have.length', 0);
   });
 

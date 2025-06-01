@@ -6,10 +6,10 @@ export default defineConfig({
     ...nxE2EPreset(__filename, {
       cypressDir: 'src',
       webServerCommands: {
-        default: 'npx nx run cube-dance-party:serve',
-        production: 'npx nx run cube-dance-party:serve-static',
+        default: 'npx nx run landing-page:serve',
+        production: 'npx nx run landing-page:serve-static',
       },
-      ciWebServerCommand: 'npx nx run cube-dance-party:serve-static',
+      ciWebServerCommand: 'npx nx run landing-page:serve-static',
       ciBaseUrl: 'http://localhost:4200',
     }),
     baseUrl: 'http://localhost:4200',
