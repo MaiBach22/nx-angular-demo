@@ -78,5 +78,8 @@
     "@nx/angular:component": {
       "style": "css"
     }
+  },
+  "affected": {
+    "defaultBase": "origin/main"
   }
 }
