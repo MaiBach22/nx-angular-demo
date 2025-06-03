@@ -15,13 +15,12 @@
       "!{projectRoot}/**/*.cy.[jt]s?(x)",
       "!{projectRoot}/cypress.config.[jt]s"
     ],
-    "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml", "package.json", "nx.json", "tsconfig.base.json"]
+    "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
   "nxCloudId": "6835ba203abc6843d0b6abee",
   "targetDefaults": {
     "build": {
-      "cache": true,
-      "inputs": ["default"]
+      "cache": true
     },
     "test": {
       "cache": true
@@ -88,15 +87,6 @@
   },
   "affected": {
     "defaultBase": "origin/demo"
-  },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nx/workspace/tasks-runners/default",
-      "options": {
-        "cacheableOperations": ["build", "test", "lint"],
-        "accessToken": "Y2ZiMDQwMjUtOTU2Ni00NmMwLTg1YTAtZmE1OTEzNGFmN2Y0fHJlYWQ="
-      }
-    }
   }
 }
 
