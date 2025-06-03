@@ -15,12 +15,13 @@
       "!{projectRoot}/**/*.cy.[jt]s?(x)",
       "!{projectRoot}/cypress.config.[jt]s"
     ],
-    "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
+    "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml", "package.json", "nx.json", "tsconfig.base.json"]
   },
   "nxCloudId": "6835ba203abc6843d0b6abee",
   "targetDefaults": {
     "build": {
-      "cache": true
+      "cache": true,
+      "inputs": ["default"]
     },
     "test": {
       "cache": true
