@@ -16,11 +16,9 @@
       "!{projectRoot}/cypress.config.[jt]s"
     ],
     "sharedGlobals": [
-      "{workspaceRoot}/.github/workflows/ci.yml",
-      "{workspaceRoot}/.github/workflows/nx-demo.yml"
+      "{workspaceRoot}/.github/workflows/ci.yml"
     ]
   },
-  "nxCloudId": "683f0e5205e10de62c9230a2",
   "targetDefaults": {
     "build": { "cache": true },
     "test": { "cache": true },
