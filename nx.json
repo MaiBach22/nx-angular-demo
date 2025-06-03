@@ -15,7 +15,10 @@
       "!{projectRoot}/**/*.cy.[jt]s?(x)",
       "!{projectRoot}/cypress.config.[jt]s"
     ],
-    "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
+    "sharedGlobals": [
+      "{workspaceRoot}/.github/workflows/ci.yml",
+      "{workspaceRoot}/.github/workflows/nx-demo.yml"
+    ]
   },
   "nxCloudId": "6835ba203abc6843d0b6abee",
   "targetDefaults": {
@@ -89,7 +92,3 @@
     "defaultBase": "origin/demo"
   }
 }
-
-
-
-
