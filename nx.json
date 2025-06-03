@@ -19,7 +19,6 @@
       "{workspaceRoot}/.github/workflows/ci.yml"
     ]
   },
-  "nxCloudId": "6835ba203abc6843d0b6abee",
   "targetDefaults": {
     "build": {
       "cache": true
