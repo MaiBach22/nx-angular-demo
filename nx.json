@@ -94,7 +94,7 @@
       "runner": "@nx/workspace/tasks-runners/default",
       "options": {
         "cacheableOperations": ["build", "test", "lint"],
-        "accessToken": "Y2ZiMDQwMjUtOTU2Ni00NmMwLTg1YTAtZmE1OTEzNGFmN2Y0fHJlYWQ=" // required for CI or other machines
+        "accessToken": "Y2ZiMDQwMjUtOTU2Ni00NmMwLTg1YTAtZmE1OTEzNGFmN2Y0fHJlYWQ="
       }
     }
   }
