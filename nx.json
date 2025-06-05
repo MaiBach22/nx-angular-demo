@@ -66,5 +66,5 @@
     "@nx/angular:library": { "linter": "eslint", "unitTestRunner": "jest" },
     "@nx/angular:component": { "style": "css" }
   },
-  "affected": { "defaultBase": "origin/demo" }
+  "affected": { "defaultBase": "origin/main" }
 }
